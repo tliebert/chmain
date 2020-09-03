@@ -1,0 +1,140 @@
+.navbarContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#navbar {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 5px solid var(--dark-text);
+    font-size: 2.5rem;
+}
+
+.navButton {
+    border-left: 5px solid black;
+    padding-left: 5px;
+}
+
+a:hover {
+    color: var(--yellow-main);
+}
+
+.mainWrapper{
+    max-width: 1200px;
+    position: relative;
+}
+
+body {
+    font-size: 1.8rem;
+    margin: 0px;
+    background-color: var(--alt-background)
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+h1 {
+    color: var(--accent-green);
+
+}
+
+p {
+    padding: 10px 15px;
+    border: 5px solid var(--dark-text);
+    text-align: justify;
+}
+
+.leftTitleGrid {
+    display: grid; 
+    grid-gap: 10px;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 100px 1fr;
+}
+
+.leftTitle {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    justify-self: flex-end;
+    align-self: flex-end;
+    margin: 0;
+}
+
+.leftTitleContent {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin: 0;
+}
+
+#commit {
+    margin-left: 10px;
+    font-size: 3.2rem;
+    text-align: right;
+}
+
+.backgroundImageDiv {
+    position: relative;
+}
+
+.topSpace {
+    margin-top: 20px;
+}
+
+footer {
+    margin: 0px 0px 15px 0px;
+    border-top: 5px solid var(--dark-text);
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+footer a {
+    color: var(--dark-text);
+    font-size: 1.5rem;
+    padding-right: 10px;
+}
+
+.submitContainer {
+ display: flex;
+ justify-content: center;
+ margin: 50px 0px;
+ width: 100vw;
+}
+
+.anchorBox {
+    border: 5px solid var(--dark-text);
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+.anchorBox a#formButton {
+    color: var(--accent-green);
+}
+
+.anchorBox:hover #formButton{
+    background-color: var(--accent-green);
+    color: var(--yellow-main);
+}
+
+.anchorBox:hover {
+    background-color: var(--accent-green);
+    border-color: var(--yellow-main);
+}
+
+* {
+    scroll-behavior: smooth;
+    --yellow-main: #FBD46D;
+    --background-main: #d8d3cf;
+    --dark-text: #222831;
+    --accent-green: #4F8A8B;
+    --alt-background: #eedece; 
+}
